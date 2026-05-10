@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FAFAFA;
+  --card: #FFFFFF;
+  --border: #E5E5E5;
+  --text-primary: #171717;
+  --text-secondary: #525252;
+  --text-muted: #A3A3A3;
+  --accent: #0A0A0A;
+  --accent-hover: #262626;
+  --success: #22C55E;
+  --warning: #F59E0B;
+  --error: #EF4444;
+  --font-geist: "Geist", "Inter", system-ui, sans-serif;
+}
+
+.dark {
+  --background: #0A0A0A;
+  --card: #171717;
+  --border: #262626;
+  --text-primary: #FAFAFA;
+  --text-secondary: #A3A3A3;
+  --text-muted: #525252;
+  --accent: #FFFFFF;
+  --accent-hover: #E5E5E5;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: var(--font-geist);
+  transition: background-color 200ms ease-out, color 200ms ease-out;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-glow {
+  background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(102, 126, 234, 0.15), transparent);
+}
+
+.dark .hero-glow {
+  background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(102, 126, 234, 0.1), transparent);
+}
