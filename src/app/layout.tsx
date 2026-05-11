@@ -24,7 +24,7 @@ export default function RootLayout({
       <body className={`${geist.variable} font-sans antialiased`}>
         <ThemeInitializer />
         <Navbar />
-        <main className="pt-16 min-h-screen">
+        <main className="min-h-screen container mx-auto">
           {children}
         </main>
       </body>

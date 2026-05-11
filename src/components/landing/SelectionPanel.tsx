@@ -34,7 +34,7 @@ export function SelectionPanel() {
   };
 
   return (
-    <div className="mt-6 w-full max-w-xl">
+    <div className="mt-10 w-full max-w-xl">
       <div className="space-y-4">
         {/* Branch */}
 
@@ -165,17 +165,14 @@ export function SelectionPanel() {
             justify-center
             gap-3
             rounded-3xl
-            bg-gradient-to-r
-            from-violet-600
-            to-indigo-500
+            bg-[var(--primary)]
             text-lg
             font-semibold
             text-white
-            shadow-[0_20px_50px_rgba(109,94,245,0.35)]
             transition-all duration-300
-            hover:scale-[1.01]
-            active:scale-[0.99]
-            disabled:opacity-50
+                hover:scale-[1.02]
+                hover:bg-[var(--primary-hover)]
+            disabled:cursor-not-allowed
           "
         >
           Get Started

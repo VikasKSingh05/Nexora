@@ -28,7 +28,7 @@ export function HeroSection() {
         relative
         min-h-screen
         overflow-hidden
-        pt-28
+        pt-32
       "
     >
       <AmbientBackground />
@@ -62,13 +62,13 @@ export function HeroSection() {
 
       {/* Extra Glow Layer */}
 
-      <div
-        className="
-          absolute inset-0
-          bg-[radial-gradient(circle_at_top,rgba(124,108,255,0.16),transparent_35%)]
-          pointer-events-none
-        "
-      />
+     <div
+  className="
+    absolute inset-0
+    pointer-events-none
+    dark:bg-[radial-gradient(circle_at_top,rgba(124,108,255,0.28),transparent_55%)]
+  "
+/>
 
       {/* Decorative Shapes */}
 
@@ -96,7 +96,7 @@ export function HeroSection() {
         <ConnectorCurve className="left-[14%] top-[40%] w-[220px]" />
 
         <ConnectorCurve
-          className="right-[14%] top-[44%] w-[220px] scale-x-[-1]"
+          className="right-[14%] top-[40%] w-[220px] scale-x-[-1]"
           color="#34D399"
         />
 
@@ -185,7 +185,7 @@ export function HeroSection() {
           >
             <Sparkles className="h-4 w-4" />
 
-            Notes that simplify learning.
+            Study Smarter
           </div>
 
           {/* Heading */}
@@ -206,10 +206,10 @@ export function HeroSection() {
           <h1
             className="
               max-w-4xl
-              text-[clamp(3rem,7vw,5.8rem)]
+              text-[clamp(2.8rem,6vw,5.2rem)]
               font-black
               leading-[0.92]
-              tracking-[-0.08em]
+              tracking-[-0.04em]
               text-[#050816]
               dark:text-white
             "
@@ -222,7 +222,7 @@ export function HeroSection() {
                 bg-gradient-to-r
                 from-violet-600
                 via-indigo-500
-                to-violet-400
+                to-violet-600
                 bg-clip-text
                 text-transparent
               "
@@ -230,12 +230,12 @@ export function HeroSection() {
               simplify
             </span>{" "}
 
-            learning.
+            learning
           </h1>
 
           {/* Subtitle */}
 
-          <p
+          {/* <p
             className="
               mt-8
               max-w-2xl
@@ -248,7 +248,7 @@ export function HeroSection() {
             Well-structured, easy to understand
             and carefully organized notes across
             all subjects.
-          </p>
+          </p> */}
 
           {/* Selection */}
 
